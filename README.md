@@ -1,6 +1,6 @@
 # Calculator Dashboard
 
-A modern web application featuring multiple calculator types, user authentication, and state persistence.
+A modern web application structured as a Single Page Application (SPA) featuring multiple calculator types, user authentication, and state persistence.
 
 ## Features
 - Basic Calculator
@@ -20,14 +20,6 @@ A modern web application featuring multiple calculator types, user authenticatio
 - Authentication: JWT
 - Testing: Jest
 - Containerization: Docker
-
-## Development
-The application is structured as a Single Page Application (SPA) with:
-
-- Modern web framework (React.js)
-- RESTful API backend
-- Docker containerization
-- Comprehensive test coverage
 
 ## Requirements
 - Node.js (v18 or higher)
