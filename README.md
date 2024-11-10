@@ -48,34 +48,36 @@ npm install
  
 4. Start MongoDB service
 5. Start the servers:
-*npm start* - in backend directory
-*npm start* - in frontend directory
+In backend directory:
+```
+npm start
+```
+In frontend directory:
+```
+npm start
+```
 6. Access the application at http://localhost:3000
-
-## Troubleshooting
-- Docker connection issues: Ensure Docker Desktop is running
-- MongoDB connection: Check database service status
-- Port conflicts: Verify ports 3000 and 8000 are available
-- Network errors: Check API_URL configuration
 
 ## Environment Variables
 
-1. Create .env file in backend directory after the .env.example file included in the folder
-2. Insert your API key for accessing the currency exchange rates API - in server.js
+1. Create .env file in backend directory similar to the .env.example file included in the folder.
+2. Insert your API key for accessing the currency exchange rates API in the server.js file.
 
 ## Testing
 
 You can run tests for both backend and frontend files:
 
 ### Frontend Tests
-
-*cd frontend
-npm test*
+```
+cd frontend
+npm test
+```
 
 ### Backend Tests
-
-*cd backend
-npm test*
+```
+cd backend
+npm test
+```
 
 ## Usage
 
