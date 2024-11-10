@@ -60,7 +60,7 @@ npm start
 
 ## Environment Variables
 
-1. Create .env file in backend directory similar to the .env.example file included in the folder.
+1. Insert your environment variables needed for the backend into the .env file in backend directory.
 2. Insert your API key for accessing the currency exchange rates API in the server.js file.
 
 ## Testing
