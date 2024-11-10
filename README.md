@@ -14,7 +14,6 @@ A modern web application featuring multiple calculator types, user authenticatio
 - Notes for Calculations
 
 ## Technology Stack
-
 - Frontend: React.js
 - Backend: Node.js, Express
 - Database: MongoDB
@@ -47,16 +46,19 @@ The application is structured as a Single Page Application (SPA) with:
 ### Manual Setup
 1. Clone the repository
 2. Install dependencies:
-*```bash
+```
+bash 
 cd frontend
 npm install
 cd ../backend
-npm install*
-3. Start MongoDB service
-4. Start the servers:
+npm install
+```
+ 
+4. Start MongoDB service
+5. Start the servers:
 *npm start* - in backend directory
 *npm start* - in frontend directory
-5. Access the application at http://localhost:3000
+6. Access the application at http://localhost:3000
 
 ## Troubleshooting
 - Docker connection issues: Ensure Docker Desktop is running
