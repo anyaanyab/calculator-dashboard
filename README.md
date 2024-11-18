@@ -32,7 +32,27 @@ A modern web application structured as a Single Page Application (SPA) featuring
 ## Environment Variables
 
 1. Insert your environment variables needed for the backend into the .env file in backend directory.
-2. Insert your API key for accessing the currency exchange rates API in the server.js file.
+   
+For JWT_SECRET, run the following command using Node.js crypto module in the terminal and put the output as the environment variable:
+```
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
+For MONGO_URI, use, for example:
+```
+mongodb://mongodb:27017/calculator-dashboard
+```
+
+or
+
+```
+mongodb://localhost:27017/calculator-dashboard
+```
+
+3. Insert your API key for accessing the currency exchange rates API in the server.js file.
+```
+const API_KEY = 'ExchangeRate_API';
+```
 
 ### Setup Using Docker (Recommended)
 1. Install Docker Desktop
