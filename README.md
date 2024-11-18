@@ -48,7 +48,7 @@ or, if desired to run MongoDB locally (mongod command):
 ```
 mongodb://mongodb:27017/calculator-dashboard
 ```
-3. Insert your API key for accessing the currency exchange rates API in the server.js file.
+2. Insert your API key for accessing the currency exchange rates API in the server.js file.
 ```
 const API_KEY = 'ExchangeRate_API';
 ```
@@ -70,8 +70,8 @@ cd ../backend
 npm install
 ```
  
-4. Start MongoDB service locally (currently Mongo is configured to run in Docker)
-5. Start the servers:
+3. Start MongoDB service locally (currently Mongo is configured to run in Docker)
+4. Start the servers:
 In backend directory:
 ```
 npm start
@@ -80,7 +80,7 @@ In frontend directory:
 ```
 npm start
 ```
-6. Access the application at http://localhost:3000
+5. Access the application at http://localhost:3000
 
 ## Testing
 
