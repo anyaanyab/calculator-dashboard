@@ -23,8 +23,10 @@ A modern web application structured as a Single Page Application (SPA) featuring
 
 ## Requirements
 - Node.js (v18 or higher)
-- MongoDB
+- npm (Node Package Manager)
+- MongoDB (v4.4 or higher)
 - Docker Desktop
+- Jest
 - Web Browser (Chrome, Firefox, Safari)
 
 ## Installation & Setup
@@ -38,11 +40,14 @@ For JWT_SECRET, run the following command using Node.js crypto module in the ter
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
 
-For MONGO_URI:
+For MONGO_URI in Docker:
 ```
 mongodb://mongodb:27017/calculator-dashboard
 ```
-
+or, if desired to run MongoDB locally (mongod command):
+```
+mongodb://mongodb:27017/calculator-dashboard
+```
 3. Insert your API key for accessing the currency exchange rates API in the server.js file.
 ```
 const API_KEY = 'ExchangeRate_API';
@@ -65,7 +70,7 @@ cd ../backend
 npm install
 ```
  
-4. Start MongoDB service
+4. Start MongoDB service locally (currently Mongo is configured to run in Docker)
 5. Start the servers:
 In backend directory:
 ```
@@ -79,15 +84,38 @@ npm start
 
 ## Testing
 
+### Testing Requirenents
+- Jest
+```
+npm install -g jest
+```
+- Supertest
+```
+npm install --save-dev supertest
+```
+
 You can run tests for both backend and frontend files:
 
-### Frontend Tests
+### Testing Using Docker (Recommended)
+
+Frontend Tests
+```
+docker-compose exec frontend npm test
+```
+
+Backend Tests
+```
+docker-compose exec backend npm test
+```
+### Manual Testing (MongoDB is configured to run in Docker)
+
+Frontend Tests
 ```
 cd frontend
 npm test
 ```
 
-### Backend Tests
+Backend Tests
 ```
 cd backend
 npm test
