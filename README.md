@@ -38,15 +38,9 @@ For JWT_SECRET, run the following command using Node.js crypto module in the ter
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
 
-For MONGO_URI, use, for example:
+For MONGO_URI:
 ```
 mongodb://mongodb:27017/calculator-dashboard
-```
-
-or
-
-```
-mongodb://localhost:27017/calculator-dashboard
 ```
 
 3. Insert your API key for accessing the currency exchange rates API in the server.js file.
