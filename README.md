@@ -29,7 +29,12 @@ A modern web application structured as a Single Page Application (SPA) featuring
 
 ## Installation & Setup
 
-### Using Docker (Recommended)
+## Environment Variables
+
+1. Insert your environment variables needed for the backend into the .env file in backend directory.
+2. Insert your API key for accessing the currency exchange rates API in the server.js file.
+
+### Setup Using Docker (Recommended)
 1. Install Docker Desktop
 2. Clone the repository
 3. Run *docker-compose up --build*
@@ -57,11 +62,6 @@ In frontend directory:
 npm start
 ```
 6. Access the application at http://localhost:3000
-
-## Environment Variables
-
-1. Insert your environment variables needed for the backend into the .env file in backend directory.
-2. Insert your API key for accessing the currency exchange rates API in the server.js file.
 
 ## Testing
 
