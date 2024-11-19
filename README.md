@@ -84,7 +84,7 @@ npm start
 
 ## Testing
 
-### Testing Requirenents
+### Testing Requirements
 - Jest
 ```
 npm install -g jest
