@@ -98,12 +98,12 @@ You can run tests for both backend and frontend files:
 
 ### Testing Using Docker (Recommended)
 
-Frontend Tests
+Frontend Tests (Run in a separate terminal, while Docker is setup)
 ```
 docker-compose exec frontend npm test
 ```
 
-Backend Tests
+Backend Tests (Run in a separate terminal, while Docker is setup)
 ```
 docker-compose exec backend npm test
 ```
